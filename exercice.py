@@ -9,9 +9,18 @@ def reverse_data(data: list = None):
     # TODO: Demander 10 valeurs à l'utilisateur,
     # les stocker dans une structure de données,
     # et les retourner en ordre inverse, sans utiliser de liste.
-
     if data is None:
-        pass  # Demander les valeurs ici
+        data = [input('Saisir : ') for i in range(10)]
+    s = Stack()
+   
+    for d in data:
+        s.put(d)
+    return [s.get() for i in range len(s)]
+    
+    
+    
+
+    
 
     reversed_data = None  # Stocker le résultat ici
 
@@ -20,11 +29,20 @@ def reverse_data(data: list = None):
 
 def delete_nth_from_stack(data: Stack, position: int) -> Stack:
     # TODO: Supprimer le énième (position) élément de data et retourner la nouvelle structure de données.
+    s = Stack()
+    
+    for i in range(len(data)- position):
+        s.put(data.get())
+    data.get()
+    
+        
     return Stack()
 
 
 def delete_nth_from_queue(data: Queue, position: int) -> Queue:
     # TODO: Supprimer le énième (position) élément de data et retourner la nouvelle structure de données.
+    
+    
     return Queue()
 
 
