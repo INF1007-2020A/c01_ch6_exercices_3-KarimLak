@@ -16,7 +16,13 @@ def reverse_data(data: list = None):
     for d in data:
         s.put(d)
     return [s.get() for i in range len(s)]
-    
+    listey = deque()
+
+#for i in range(4-nombre):
+  #listey.append(liste.pop())
+
+#for i in range(0,nombre-1):
+  #listey.append(liste[i])
     
     
 
